@@ -30,7 +30,7 @@ const ToDo = () => {
                return i.id === id
           })
           setToDo(editable[0].ToDo)
-          let update = Tasks.filter((i)=>{
+          let update = Tasks.filter((i) => {
                return i.id !== id
           })
           setTasks(update)
@@ -43,14 +43,13 @@ const ToDo = () => {
                          <h1 className="heading">Write your Todo's</h1>
                          <div className="input-field">
                               <input type="text" name="" id="" value={ToDo} onChange={HandleText} className='input-text' />
-                              <button onClick={HandleButton}>Add</button>
+                              <button disabled={ToDo.length <= 3} onClick={HandleButton}>Add</button>
                          </div>
                          <div className="task-list">
                               {Tasks.length === 0 && <h3>List is Empty</h3>}
                               {Tasks.map((item) => {
                                    return <div className="list" key={item.id}>
                                         <div className="only-task">
-
                                              <input value={item.id} type="checkbox" />
                                              <p>{item.ToDo}</p>
                                         </div>
