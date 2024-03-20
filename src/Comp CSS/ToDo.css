@@ -1,0 +1,147 @@
+.container::-webkit-scrollbar {
+     width: 5px;
+     /* Width of the scrollbar */
+}
+
+/* Track */
+.container::-webkit-scrollbar-track {
+     background: #f5dbed;
+     /* Color of the track */
+}
+
+/* Handle */
+.container::-webkit-scrollbar-thumb {
+     background: #eb54eb;
+     border-radius: 0.5rem;
+     /* Color of the handle */
+}
+
+/* Handle on hover */
+.container::-webkit-scrollbar-thumb:hover {
+     background: #eb19a5;
+     /* Color of the handle on hover */
+}
+
+/* Corner */
+.container::-webkit-scrollbar-corner {
+     background: transparent;
+     /* Color of the corner */
+}
+
+
+
+
+.container {
+     width: 60%;
+     height: 80vh;
+     box-shadow: -5px 8px 16px 2px rgba(0, 0, 0, 0.20);
+     overflow-y: auto;
+     background-color: azure;
+     border-radius: 1rem;
+     position: relative;
+     top: 4rem;
+     display: flex;
+}
+
+.child {
+     width: 90%;
+     height: 100%;
+     margin: auto;
+}
+
+h1 {
+     font-size: 1.7rem;
+     font-weight: 800;
+     width: 100%;
+     margin-top: 2rem;
+     height: max-content;
+}
+
+.input-text {
+     width: 50%;
+     border-radius: 0.5rem;
+     padding: 1rem;
+     background-color: rgb(240, 222, 237);
+     outline: none;
+     border: 0.2rem solid transparent;
+     transition: border 0.4s ease-in-out;
+}
+
+.input-text:focus {
+     border: 0.2rem solid purple;
+}
+
+.input-field {
+     margin-top: 2rem;
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: space-between;
+     height: max-content;
+}
+
+.input-field button,
+.only-button button {
+     width: 30%;
+     padding: 1rem;
+     outline: none;
+     border-radius: 0.5rem;
+     border: 2px solid transparent;
+     cursor: pointer;
+     font-size: 1.4rem;
+     background-color: rgb(238, 233, 212);
+     transition: border 0.4s ease-in-out;
+     font-weight: 700;
+}
+
+button:hover {
+     border: 2px solid purple;
+}
+
+.list {
+     display: flex;
+     margin-top: 2rem;
+     flex-wrap: wrap;
+     align-items: center;
+     width: 100%;
+     height: fit-content;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+.only-task {
+     display: flex;
+     width: 70%;
+     align-items: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 1rem;
+}
+
+.list p {
+     font-size: 1.6rem;
+     width: 90%;
+}
+
+.only-button {
+     width: 15%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.only-button button {
+     width: 3rem;
+     padding: 0.5rem;
+     height: 3rem;
+}
+
+h3{
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     font-size: 1.2rem;
+     margin-top: 10rem;
+     font-weight: 400;
+}
