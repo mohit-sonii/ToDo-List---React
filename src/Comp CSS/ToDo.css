@@ -128,7 +128,6 @@ button:hover {
 
 .only-button {
      width: max-content;
-     background-color: orange;
      display: flex;
      gap:1rem;
      flex-wrap: wrap;
