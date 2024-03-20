@@ -37,7 +37,7 @@ const ToDo = () => {
 
      }
      return (
-          <>
+          <> 
                <div className="container">
                     <div className="child">
                          <h1 className="heading">Write your Todo's</h1>
